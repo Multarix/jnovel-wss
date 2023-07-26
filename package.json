@@ -1,0 +1,41 @@
+{
+	"name": "book-websocket",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "A simple web socket server",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Multarix/book-websocket.git"
+	},
+	"author": "Multarix",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Multarix/book-websocket/issues"
+	},
+	"homepage": "https://github.com/Multarix/book-websocket/",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"dependencies": {
+		"@types/node-cron": "^3.0.8",
+		"@types/uuid": "^9.0.2",
+		"@types/ws": "^8.5.5",
+		"chalk": "^5.3.0",
+		"express": "^4.18.2",
+		"node-cron": "^3.0.2",
+		"node-fetch": "^3.3.1",
+		"sqlite": "^5.0.1",
+		"sqlite3": "^5.1.6",
+		"ws": "^8.13.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.1.0",
+		"@typescript-eslint/eslint-plugin": "^5.59.2",
+		"@typescript-eslint/parser": "^5.59.2",
+		"eslint": "^8.40.0",
+		"tsc-hooks": "^1.1.2"
+	},
+	"prepublish": "tsc",
+	"scripts": {
+		"build": "tsc"
+	}
+}
